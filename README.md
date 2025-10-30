@@ -17,11 +17,14 @@ Checking the balance of the target variable to see if our dataset was skewed (it
 Visualizing the distributions of key features like age, cholesterol, and max heart rate for patients with and without heart disease.
 Plotting how categorical features like sex and chest pain type correlate with a heart disease diagnosis.
 Creating a correlation heatmap to understand how all numerical features relate to each other and to the target.
+
+
 Phase 2: Data Preprocessing
 To prepare the data for machine learning, we:
 Converted Categorical Data: Used one-hot encoding (via pd.get_dummies) to convert categorical columns (like chest pain type) into a numerical format that models can understand.
 Split the Data: Divided the dataset into a training set (80%) to teach the models and a testing set (20%) to evaluate their performance.
 Feature Scaling: Applied StandardScaler to all numerical features. This normalizes the data, ensuring that features with larger ranges (like cholesterol) do not unfairly dominate features with smaller ranges (like oldpeak).
+
 Phase 3: Model Building and Evaluation
 We trained and evaluated three different classification models to find the most effective "system" for prediction.
 Logistic Regression: A solid, reliable baseline model for binary classification.
